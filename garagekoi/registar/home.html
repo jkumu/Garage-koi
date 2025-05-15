@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GarageKoi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #F4ECD8; /* Matches the first image's beige background */
+            color: #333; /* Darker text for contrast */
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #FFD700; /* Yellow inspired by the design */
+            padding: 10px 20px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+        }
+        .navbar-nav .nav-link {
+            color: #333;
+            font-weight: bold;
+            margin-left: 20px;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #000;
+        }
+        .container {
+            max-width: 800px;
+            margin: 100px auto;
+            padding: 20px;
+        }
+        .image-section {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-top: 40px;
+        }
+        .image-section img {
+            width: 45%;
+            max-width: 300px;
+            height: auto;
+        }
+        .image-section div {
+            flex: 1;
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+        .welcome-section {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 50px;
+        }
+        .welcome-section img {
+            width: 45%;
+            max-width: 300px;
+            height: auto;
+        }
+        .welcome-text {
+            flex: 1;
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar with title and buttons -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">GarageKoi</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-us">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sign.php">Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login1.php">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Welcome section -->
+        <div class="welcome-section">
+            <img src="car.jpg" alt="Car Illustration">
+            <div class="welcome-text">
+                <h2>Welcome to GarageKoi</h2>
+                <p>We are glad that you choose us. We are here to help you find the nearest parking place.</p>
+            </div>
+        </div>
+
+        <!-- About Us Section -->
+        <section id="about-us" style="margin-top: 50px;">
+            <h3>About Us</h3>
+            <p>
+                GarageKoi is your ultimate parking assistant. We strive to simplify the hassle of finding the nearest parking 
+                spaces, ensuring your journey is stress-free and efficient.
+            </p>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section id="why-choose-us" style="margin-top: 50px;">
+            <h3>Why Choose Us?</h3>
+
+            <!-- First Image Section -->
+            <div class="image-section">
+                <img src="1.jpg" alt="Car Navigation">
+                <div>
+                    <p>GarageKoi will help you save time and find the nearest parking place for you.</p>
+                </div>
+            </div>
+
+            <!-- Second Image Section -->
+            <div class="image-section">
+                <img src="3.jpg" alt="Car Tow Truck">
+                <div>
+                    <p>If you park your car in a no-parking zone, you may face fines or towing penalties. GarageKoi helps you avoid such hassles by guiding you to designated parking spots.</p>
+                </div>
+            </div>
+
+            <!-- Third Image Section -->
+            <div class="image-section">
+                <img src="2.jpg" alt="Car Safety">
+                <div>
+                    <p>Your car can face safety issues if left outside. GarageKoi not only provides you with a parking space but also ensures the safety of your vehicle.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+</html>
